@@ -14,13 +14,9 @@
 
 ## 👾 Sobre mim
 
-Olá! Sou o **Gustavo**, estudante de Engenharia de Software com foco profundo em **Cibersegurança**.  
-Minha jornada é impulsionada pela curiosidade de entender como os sistemas funcionam por baixo dos panos e como protegê-los contra ameaças reais. Atualmente, dedico meu tempo à análise de vulnerabilidades, arquitetura de redes seguras e desenvolvimento de scripts de automação.
+Olá! Sou o **Gustavo**, estudante de Engenharia de Software com foco em **Cibersegurança/Segurança da Informação**.  
 
-- 🎯 **Foco atual:** Proteção de infraestrutura, testes de intrusão e monitoramento avançado.
-- 🚧 **Projetos:** Desenvolvendo ferramentas e ambientes de laboratório no momento (em breve no repositório).
-
----
+Minhacuriosidade de entender como os sistemas funcionam por baixo dos panos e como protegê-los contra ameaças reais como atualmente a Inteligencia Artificial. Atualmente, dedico meu tempo à análise de vulnerabilidades, arquitetura de redes seguras e desenvolvimento de scripts de automação.
 
 ## 🛠️ Tecnologias & Ferramentas
 
@@ -42,44 +38,15 @@ Minha jornada é impulsionada pela curiosidade de entender como os sistemas func
   **`Cibersegurança & Análise`**  
   ![Wireshark](https://img.shields.io/badge/Wireshark-0d1117?style=for-the-badge&logo=wireshark&logoColor=b366ff)
   ![Nmap](https://img.shields.io/badge/Nmap-0d1117?style=for-the-badge&logo=nmap&logoColor=ff4d4d)
-  ![Metasploit](https://img.shields.io/badge/Metasploit-0d1117?style=for-the-badge&logo=metasploit&logoColor=b366ff)
-  ![Burp Suite](https://img.shields.io/badge/Burp_Suite-0d1117?style=for-the-badge&logo=burpsuite&logoColor=ff4d4d)
-  ![Splunk](https://img.shields.io/badge/Splunk-0d1117?style=for-the-badge&logo=splunk&logoColor=b366ff)
   ![QRadar](https://img.shields.io/badge/QRadar-0d1117?style=for-the-badge&logo=ibm&logoColor=ff4d4d)
-  ![Snort](https://img.shields.io/badge/Snort-0d1117?style=for-the-badge&logo=snort&logoColor=b366ff)
 
   <br>
 
   **`Cloud & Infraestrutura`**  
-  ![AWS](https://img.shields.io/badge/AWS-0d1117?style=for-the-badge&logo=amazon-aws&logoColor=ff4d4d)
   ![Azure](https://img.shields.io/badge/Azure-0d1117?style=for-the-badge&logo=microsoft-azure&logoColor=b366ff)
-  ![GCP](https://img.shields.io/badge/GCP-0d1117?style=for-the-badge&logo=google-cloud&logoColor=ff4d4d)
   ![Docker](https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=b366ff)
   ![Kubernetes](https://img.shields.io/badge/Kubernetes-0d1117?style=for-the-badge&logo=kubernetes&logoColor=ff4d4d)
 
-</div>
-
----
-
-## 🚀 Projetos em Produção
-
-Como estou arquitetando a base dos meus laboratórios e ferramentas no momento, os repositórios públicos estão sendo preparados. 
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <h3>🔒 Automação de Segurança</h3>
-        <p>Desenvolvimento de scripts Python/Bash para varredura e triagem rápida de redes.</p>
-        <img src="https://img.shields.io/badge/Status-Em_Desenvolvimento-ff4d4d?style=flat-square" />
-      </td>
-      <td align="center" width="50%">
-        <h3>📡 Monitoramento Cloud</h3>
-        <p>Configuração de regras SIEM e alertas em ambientes conteinerizados (Docker/K8s).</p>
-        <img src="https://img.shields.io/badge/Status-Em_Desenvolvimento-b366ff?style=flat-square" />
-      </td>
-    </tr>
-  </table>
 </div>
 
 ---
@@ -129,10 +96,10 @@ Como estou arquitetando a base dos meus laboratórios e ferramentas no momento, 
 ## 🌐 Conecte-se comigo
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/gustavo-rodrigues-087314239" target="_blank">
+  <a href="https://www.linkedin.com/in/gustavorodrigues-swe" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=b366ff" alt="LinkedIn">
   </a>
-  <a href="https://instagram.com/Dgustk" target="_blank">
+  <a href="https://www.instagram.com/iamgustll/" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=ff4d4d" alt="Instagram">
   </a>
 </div>
