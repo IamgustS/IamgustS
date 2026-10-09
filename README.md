@@ -16,7 +16,7 @@
 
 Olá! Sou o **Gustavo**, estudante de Engenharia de Software com foco em **Cibersegurança/Segurança da Informação**.  
 
-Minhacuriosidade de entender como os sistemas funcionam por baixo dos panos e como protegê-los contra ameaças reais como atualmente a Inteligencia Artificial. Atualmente, dedico meu tempo à análise de vulnerabilidades, arquitetura de redes seguras e desenvolvimento de scripts de automação.
+Minha curiosidade de entender como os sistemas funcionam por baixo dos panos e como protegê-los contra ameaças reais como atualmente a Inteligência Artificial. Atualmente, dedico meu tempo à análise de vulnerabilidades, arquitetura de redes seguras e desenvolvimento de scripts de automação.
 
 ## 🛠️ Tecnologias & Ferramentas
 
