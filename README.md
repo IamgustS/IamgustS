@@ -25,42 +25,17 @@
 <h2 align="center">🚀 Sobre mim</h2>
 
 <table>
-  <tr>
-    <td width="62%" valign="top">
-
-      <p>
-        <strong>Gustavo</strong>, de São Paulo, estudante de Engenharia de
-        Software na Unicid, com foco em cibersegurança e segurança da
-        informação.
-      </p>
-      <p>
-        Gosto de construir aplicações web seguras e funcionais, e de entender
-        como os sistemas funcionam por dentro: redes, logs, banco de dados e
-        automação.
-      </p>
-      <p>
-        Atualmente estou estudando <strong>Python, SQL, Linux, redes (TCP/IP e
-        Wireshark)</strong> e <strong>Inteligência Artificial</strong>,
-        enquanto desenvolvo projetos que unem código, segurança e design de
-        interface.
-      </p>
-      <p>
-        Meu objetivo é simples: escrever código limpo, criar software
-        confiável e crescer como <strong>AI Engineer</strong>, sem abrir mão
-        da segurança e de uma boa experiência de uso.
-      </p>
-
-    </td>
-    <td width="38%" align="center" valign="middle">
-
-      <img
-        src="assets/sobre.png"
-        alt="Ilustração em estilo pixel art"
-        width="230"
-      />
-
-    </td>
-  </tr>
+<tr>
+<td width="62%" valign="top">
+<p><strong>Gustavo</strong>, de São Paulo, estudante de Engenharia de Software na Unicid, com foco em cibersegurança e segurança da informação.</p>
+<p>Gosto de construir aplicações web seguras e funcionais, e de entender como os sistemas funcionam por dentro: redes, logs, banco de dados e automação.</p>
+<p>Atualmente estou estudando <strong>Python, SQL, Linux, redes (TCP/IP e Wireshark)</strong> e <strong>Inteligência Artificial</strong>, enquanto desenvolvo projetos que unem código, segurança e design de interface.</p>
+<p>Meu objetivo é simples: escrever código limpo, criar software confiável e crescer como <strong>AI Engineer</strong>, sem abrir mão da segurança e de uma boa experiência de uso.</p>
+<!-- Imagem ilustrativa da seção Sobre mim. -->
+<td width="38%" align="center" valign="middle">
+<img src="assets/sobre.png" alt="Ilustração em estilo pixel art" width="230" />
+</td>
+</tr>
 </table>
 
 ---
