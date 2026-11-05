@@ -1,16 +1,68 @@
-## Hi there 👋
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:8b5cf6&height=100&section=header" width="100%" alt="Cabeçalho decorativo roxo">
 
-<!--
-**IamgustS/IamgustS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+<img src="sunmon.jpg" alt="Banner do perfil" width="100%">
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br>
+
+<a href="https://github.com/IamgustS">
+  <img src="https://cdn.simpleicons.org/github/ffffff" width="36" height="36" alt="GitHub">
+</a>
+<a href="https://discord.com/users/haykx">
+  <img src="https://cdn.simpleicons.org/discord/5865F2" width="36" height="36" alt="Discord">
+</a>
+<a href="https://www.instagram.com/iamgustll">
+  <img src="https://cdn.simpleicons.org/instagram/E4405F" width="36" height="36" alt="Instagram">
+</a>
+
+</div>
+
+<div align="center">
+
+# Gustavo R.
+
+<sub>UX/UI • Cibersegurança • IA Engineer</sub>
+<br>
+
+</div>
+
+Sou **Gustavo**, estudante de Engenharia de Software. Desenvolvo aplicações web com foco em UX/UI, integração com IA e cibersegurança.
+
+---
+
+<div align="center">
+
+<h2>Tecnologias e ferramentas</h2>
+
+<img src="https://skillicons.dev/icons?i=java,python,js,ts,c,css,spring,react,nextjs,php,postgres,mysql,sqlite,docker,kubernetes,git,github,androidstudio,vscode,linux&perline=12" alt="Ícones das tecnologias e ferramentas que utilizo">
+
+</div>
+
+---
+
+<div align="center">
+
+<h2>Estatísticas do GitHub</h2>
+
+<img src="https://ghchart.rshah.org/4fd1c5/IamgustS" width="100%" alt="Calendário de contribuições do GitHub">
+<br>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=IamgustS&theme=github_dark" width="49%" alt="Estatísticas gerais do GitHub">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=IamgustS&theme=transparent&hide_border=true" width="49%" alt="Sequência de dias de contribuição no GitHub">
+
+<br>
+
+<img src="./assets/language-stats.svg" width="70%" alt="Gráfico da proporção de linguagens nos meus repositórios">
+
+</div>
+
+---
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/iamgusts)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gdr3454596@gmail.com)
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b5cf6,100:0d1117&height=100&section=footer" width="100%" alt="Rodapé decorativo roxo">
