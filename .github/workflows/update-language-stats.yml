@@ -1,0 +1,121 @@
+name: Update language statistics
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-language-chart:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate language chart
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("node:fs");
+            const username = "IamgustS";
+            const repos = await github.paginate(github.rest.repos.listForUser, {
+              username,
+              type: "owner",
+              per_page: 100
+            });
+            const selectedRepos = repos.filter(repo =>
+              !repo.private && !repo.fork && !repo.archived
+            );
+            const totals = new Map();
+
+            await Promise.all(selectedRepos.map(async repo => {
+              const { data: languages } = await github.rest.repos.listLanguages({
+                owner: repo.owner.login,
+                repo: repo.name
+              });
+              for (const [language, bytes] of Object.entries(languages)) {
+                totals.set(language, (totals.get(language) || 0) + bytes);
+              }
+            }));
+
+            const totalBytes = [...totals.values()].reduce((sum, bytes) => sum + bytes, 0);
+            if (!totalBytes) {
+              throw new Error(`No language data found for public repositories owned by ${username}.`);
+            }
+
+            const colors = {
+              PHP: "#4F5D95",
+              CSS: "#563d7c",
+              PLpgSQL: "#336790",
+              HTML: "#e34c26",
+              JavaScript: "#f1e05a",
+              Mermaid: "#ff3670",
+              TypeScript: "#3178c6",
+              Python: "#3572A5",
+              Java: "#b07219",
+              "C#": "#178600",
+              C: "#555555",
+              Go: "#00ADD8",
+              Rust: "#dea584",
+              Kotlin: "#A97BFF",
+              Swift: "#F05138"
+            };
+            const entries = [...totals.entries()]
+              .sort((a, b) => b[1] - a[1])
+              .slice(0, 6);
+            const xmlEscape = value => value.replace(/[&<>"']/g, char => ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&apos;"
+            })[char]);
+            const width = 372;
+            let offset = 24;
+            const segments = entries.map(([language, bytes]) => {
+              const segmentWidth = width * bytes / totalBytes;
+              const rect = `<rect x="${offset.toFixed(2)}" y="49" width="${segmentWidth.toFixed(2)}" height="12" fill="${colors[language] || "#8b949e"}"/>`;
+              offset += segmentWidth;
+              return rect;
+            }).join("");
+            const legend = entries.map(([language, bytes], index) => {
+              const column = Math.floor(index / 3);
+              const row = index % 3;
+              const x = column === 0 ? 29 : 220;
+              const textX = x + 12;
+              const percentX = column === 0 ? 198 : 392;
+              const y = 84 + row * 28;
+              const label = language.length > 16 ? `${language.slice(0, 15)}...` : language;
+              const percent = `${(bytes / totalBytes * 100).toFixed(1)}%`;
+              const color = colors[language] || "#8b949e";
+              return `<circle cx="${x}" cy="${y - 4}" r="5" fill="${color}"/><text x="${textX}" y="${y}" fill="#c9d1d9">${xmlEscape(label)}</text><text x="${percentX}" y="${y}" fill="#8b949e" text-anchor="end">${percent}</text>`;
+            }).join("");
+
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="420" height="174" viewBox="0 0 420 174" role="img" aria-labelledby="title description">
+              <title id="title">Linguagens dos repositórios de ${username}</title>
+              <desc id="description">Distribuição das linguagens por bytes nos repositórios públicos.</desc>
+              <rect x="1" y="1" width="418" height="172" rx="8" fill="#0d1117" stroke="#30363d"/>
+              <text x="24" y="32" fill="#c9d1d9" font-family="Arial, sans-serif" font-size="16" font-weight="600">Linguagens dos repositórios</text>
+              <defs><clipPath id="bar-clip"><rect x="24" y="49" width="372" height="12" rx="6"/></clipPath></defs>
+              <rect x="24" y="49" width="372" height="12" rx="6" fill="#21262d"/>
+              <g clip-path="url(#bar-clip)">${segments}</g>
+              <g font-family="Arial, sans-serif" font-size="12">${legend}</g>
+            </svg>`;
+
+            fs.mkdirSync("assets", { recursive: true });
+            fs.writeFileSync("assets/language-stats.svg", svg);
+
+      - name: Commit updated chart
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/language-stats.svg
+          if git diff --cached --quiet; then
+            echo "Language chart is already up to date."
+            exit 0
+          fi
+          git commit -m "Update GitHub language chart"
+          git push
