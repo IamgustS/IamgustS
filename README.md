@@ -9,11 +9,11 @@
 <a href="https://github.com/IamgustS">
   <img src="https://cdn.simpleicons.org/github/ffffff" width="36" height="36" alt="GitHub">
 </a>
-<a href="https://discord.com/users/haykx">
-  <img src="https://cdn.simpleicons.org/discord/5865F2" width="36" height="36" alt="Discord">
+<a href="https://www.youtube.com/@s6v1p">
+  <img src="https://cdn.simpleicons.org/youtube/FF0000" width="36" height="36" alt="YouTube">
 </a>
-<a href="https://www.instagram.com/iamgustll">
-  <img src="https://cdn.simpleicons.org/instagram/E4405F" width="36" height="36" alt="Instagram">
+<a href="https://www.figma.com/@Iamgust">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" width="36" height="36" alt="Figma">
 </a>
 
 </div>
@@ -62,6 +62,7 @@ Sou **Gustavo**, estudante de Engenharia de Software. Desenvolvo aplicações we
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/iamgusts)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gdr3454596@gmail.com)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/iamgustll)
 
 </div>
 
